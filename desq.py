@@ -1,8 +1,8 @@
 import os
 
-from classes.mgf_sequencer_1d_out import Sequencer
-from classes.labels_out import Label
-from classes.model_out import DeSQ
+from classes.mgf_sequencer import Sequencer
+from classes.labels import Label
+from classes.model import DeSQ
 import yaml
 
 config = yaml.safe_load(open('./config.yml'))
