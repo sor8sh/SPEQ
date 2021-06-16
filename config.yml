@@ -11,7 +11,7 @@ MS data :
 #### labels config (skip if label is ready) ####
 labels log : true             # true/false
 fdr : 0.01                    # false discovery rate
-decoy prefix : DeBruijn              # decoy indicator
+decoy prefix : DeBruijn       # decoy indicator
 
 
 #### sequencer config ####
