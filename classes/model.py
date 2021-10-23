@@ -147,7 +147,7 @@ def set_seeds(x_0, y_0, x_1, y_1, train_portion_0, train_portion_1):
     return x_train, y_train, x_test, y_test
 
 
-class DeSQ:
+class SPEQ:
     def __init__(self, output_addr, train_to_test='2,1', log=True, dataset_addr=None):
         self.out_dir = output_addr
         if dataset_addr is None:

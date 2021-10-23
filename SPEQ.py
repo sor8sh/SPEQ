@@ -2,7 +2,7 @@ import os
 
 from classes.mgf_sequencer import Sequencer
 from classes.labels import Label
-from classes.model import DeSQ
+from classes.model import SPEQ
 import yaml
 
 config = yaml.safe_load(open('./config.yml'))
@@ -27,7 +27,8 @@ else:
 
 # creating labels
 if not config['label is ready']:
-    label = Label(input_tsv_label, out_dir, fdr=float(config['fdr']), decoy=config['decoy prefix'], log=config['labels log'])
+    label = Label(input_tsv_label, out_dir, fdr=float(config['fdr']), decoy=config['decoy prefix'],
+                  log=config['labels log'])
     label.label()
 
 # creating data
@@ -35,7 +36,7 @@ sequencer = Sequencer(input_mgf, out_dir, log=config['sequencer log'])
 sequencer.sequence()
 
 # building model
-model = DeSQ(out_dir, train_to_test=config['train to test'],
+model = SPEQ(out_dir, train_to_test=config['train to test'],
              log=config['model log'], dataset_addr=config['dataset directory'])
 
 results = model.run(config['mode'], batch_n=int(config['batch size']), epoch_n=int(config['number of epochs']),

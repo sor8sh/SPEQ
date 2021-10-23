@@ -5,7 +5,7 @@ High-Throughput Quality Assessment of Peptide Tandem Mass Spectra
 ---
 
 This is the source code for the first version of SPEQ.
-To run the program, run the `speq.py` python file with python3.
+To run the program, run the `SPEQ.py` python file with python3.
 
 ### MS input data:
 * The MS input data should be in MGF format. 

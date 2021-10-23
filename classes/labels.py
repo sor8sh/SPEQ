@@ -109,7 +109,7 @@ class Label:
                 if float(sorted_tsv[i][self.e_value_index]) < float(unified_sorted_tsv[-1][self.e_value_index]):
                     unified_sorted_tsv[-1] = sorted_tsv[i]
                 elif float(sorted_tsv[i][self.e_value_index]) == float(unified_sorted_tsv[-1][self.e_value_index]):
-                    if self.decoy in unified_sorted_tsv[-1][self.e_value_index]\
+                    if self.decoy in unified_sorted_tsv[-1][self.e_value_index] \
                             and self.decoy not in sorted_tsv[i][self.e_value_index]:
                         unified_sorted_tsv[-1] = sorted_tsv[i]
             else:

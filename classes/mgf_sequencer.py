@@ -31,8 +31,9 @@ def get_one_d_seq(peaks):
     max_peak = int(peaks[-1][0])
     seq = [0] * (max_peak - min_peak + 1)
     for i in range(len(peaks)):
-        if peaks[i][1] > seq[int(peaks[i][0]) - min_peak]:
-            seq[int(peaks[i][0]) - min_peak] = peaks[i][1]
+        peak = int((peaks[i][0] + 0.4) / 1.0005079)
+        if peaks[i][1] > seq[peak - min_peak]:
+            seq[peak - min_peak] = peaks[i][1]
     return seq
 
 
