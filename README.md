@@ -1,6 +1,14 @@
 # SPEQ: Spectrum Quality
 
-High-Throughput Quality Assessment of Peptide Tandem Mass Spectra
+Quality assessment of peptide tandem mass spectra with deep learning
+
+---
+
+**Dependencies:**
+- [TensorFlow](https://www.tensorflow.org/install)
+- [Pytemoics](https://pypi.org/project/pyteomics/)
+- [NumPy](https://numpy.org/install/)
+- [Matplotlib](https://matplotlib.org/stable/users/installing/index.html)
 
 ---
 
