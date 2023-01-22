@@ -2,6 +2,8 @@
 
 Quality assessment of peptide tandem mass spectra with deep learning
 
+This work is published in the Bioinformatics journal: [https://doi.org/10.1093/bioinformatics/btab874](https://doi.org/10.1093/bioinformatics/btab874)
+
 ---
 
 **Dependencies:**
