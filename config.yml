@@ -1,14 +1,11 @@
 #### files config ####
-label is ready: false         # true if you provide the label file
-output directory :            # None if not specified
-
-# path to your database-search result file (.tsv file)
-db result file :
-# path to your MS data (.mgf file)
-MS data :
+data directory : test         # None if not specified
+labels.csv : true             # true if data directory contains labels
+MS file : sample.mgf          # MS data (.mgf file)
 
 
 #### labels config (skip if label is ready) ####
+db result file :              # path to your database-search result file (.tsv file)
 labels log : true             # true/false
 fdr : 0.01                    # false discovery rate
 decoy prefix : DeBruijn       # decoy indicator
@@ -19,15 +16,14 @@ sequencer log : true          # true/false
 
 
 #### model config ####
+load weights : false          # true/false
 train to test : 2,1           # train to test ratio
 model log : true              # true/false
 dataset directory :           # None if not specified
-mode : train                  # train/test
 batch size : 10               # batch size
 number of epochs : 5          # number of epochs
 verbose : 1                   # verbose (TensorFlow)
 validation split : .3         # validation split ratio
-load weights : false          # true/false
 save weights : true           # true/false
 weight id : 0                 # weight id
 
